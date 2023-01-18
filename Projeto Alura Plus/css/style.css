@@ -1,0 +1,254 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Arial';
+    --botao-azul-efeito: #3c92fa;
+    --transition: all 0.2s ease-in-out;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Header Container */
+
+.container__principal { 
+    background-image: url(../img/Background.png);
+    position: relative;
+}
+
+.container__combo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 160px;
+    left: 100px;
+    gap: 20px;
+}
+
+.container__principal > .container__img > img { 
+    width: 100%;
+    margin-top: 20px;
+
+}
+.container__combo > img {
+    width: 300px;
+}
+
+.container__principal > .container__combo a { 
+    text-decoration: none;
+    color: white;
+}
+
+.container__combo > .btn__assine--12x {
+    transition: var(--transition);
+    font-size: 1.0rem;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    width: 100%;
+    height: 50px;
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    border: transparent;
+}
+
+.container__combo > .btn__assine--12x:hover { 
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+
+}
+
+.container__combo > .btn__assine--alura { 
+    transition: var(--transition);
+    font-size: 1.0rem;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    width: 100%;
+    height: 50px;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.container__combo > .btn__assine--alura:hover { 
+    border: transparent;
+    color: var(--cor-de-fundo);
+    background-color: var(--botao-azul-efeito);
+
+}
+
+.container__combo > span { 
+    font-size: 0.7rem;
+    color: var(--cinza-secundario);
+}
+
+/* End Header Container */
+
+/* Main Container - Assista do seu jeito  */
+
+.assistadoseujeito--flex { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+}
+
+
+.texto--assistadoseujeito > h3 { 
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.texto--assistadoseujeito > p {
+    font-size: 0.9rem;
+    color: var(--cinza-secundario);
+
+}
+
+
+/* End Main Container - Assista do seu jeito  */
+
+/* Main Container - Combo conteúdo  */
+
+.combo__conteudo--flex { 
+    margin: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+}
+
+.texto--comboconteudo > p {
+    font-size: 0.9rem;
+    color: var(--cinza-secundario);
+    margin-bottom: 10px;
+}
+
+.btn-assine { 
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    color: var(--branco-principal);
+    font-weight: bold;
+    border: transparent;
+    transition: var(--transition);
+}
+
+.btn-assine:hover {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+
+/* Main Container - End Combo conteúdo  */
+
+
+/* Main Container - Baixe seus cursos   */
+
+.baixeseuscursos--flex { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+}
+
+.texto--baixeseuscursos > h3 { 
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.texto--baixeseuscursos > p {
+    font-size: 0.9rem;
+    color: var(--cinza-secundario);
+
+}
+
+/* Main Container - End Baixe seus cursos   */
+
+/* Main Container - Dispositivos disponíveis   */
+
+.container__dispositiviosdisponiveis {
+    margin-top: 16%;
+    height: 380px;
+
+}
+
+.dispositiviosdisponiveis--flex {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.container__dispositiviosdisponiveis > h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.img--dispositivosdisponiveis > p {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Main Container - End Dispositivos disponíveis   */
+
+
+/* Footer   */
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 2em;
+}
+
+.lista__link a{
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 1em;
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.lista__link a:active {
+    color: purple;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
+
+/* End Footer */
